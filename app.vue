@@ -1,7 +1,6 @@
 <template>
-  <main>
-    
-    <TheNav/>
-
-  </main>
+  <header>
+    <TheNav />
+  </header>
+  <TheFooter />
 </template>
