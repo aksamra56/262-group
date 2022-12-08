@@ -1,69 +1,44 @@
 <template>
-  <div class="p-6 border border-gray-300 sm:rounded-md">
-    <form>
-      <label class="block mb-6">
-        <span class="text-gray-700">Your name</span>
-        <input type="text" name="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Name"/>
-      </label>
-      <label class="block mb-6">
-        <span class="text-gray-700">Email address</span>
-        <input
-          name="email"
-          type="email"
-          class="
-            block
-            w-full
-            mt-1
-            border-gray-300
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
-          "
-          placeholder="joe.bloggs@example.com"
-          required
-        />
-      </label>
-      <label class="block mb-6">
-        <span class="text-gray-700">Message</span>
-        <textarea
-          name="message"
-          class="
-            block
-            w-full
-            mt-1
-            border-gray-300
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
-          "
-          rows="3"
-          placeholder="Tell us what you're thinking about..."
-        ></textarea>
-      </label>
-      <div class="mb-6">
-        <button
-          type="submit"
-          class="
-            h-10
-            px-5
-            text-indigo-100
-            bg-indigo-700
-            rounded-lg
-            transition-colors
-            duration-150
-            focus:shadow-outline
-            hover:bg-indigo-800
-          "
-        >
-          Contact Us
+  <form class="w-full max-w-lg block mx-auto" action="https://formspree.io/f/xnqregvy" method="POST">
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+          First Name
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Doh">
+        <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+          Last Name
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Kim">
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          E-mail
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="DohKim123@gmail.com">
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          Message
+        </label>
+        <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" placeholder="Tell us about your recipe!"></textarea>
+      </div>
+    </div>
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/3">
+        <button class="shadow bg-orange-400 hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+          Send
         </button>
       </div>
-    </form>
-  </div>
+      <div class="md:w-2/3"></div>
+    </div>
+  </form>
 </template>
+ 
