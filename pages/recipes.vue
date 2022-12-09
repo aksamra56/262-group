@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <TheHeader pageName="Recipes"/>
   <div class="grid grid-cols-3">
     <TheCard v-for="meal in meals.meals"
     :title="meal.strMeal"
