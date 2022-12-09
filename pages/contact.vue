@@ -1,4 +1,4 @@
 <template>
   <TheHeader pageName="Send us your recipe today!"/>
-  <TheForm />
+  <TheForm class="mt-10"/>
 </template>

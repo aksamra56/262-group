@@ -20,7 +20,7 @@
         <li><NuxtLink to="/recipes" class="text-sm text-gray-600 font-bold hover:text-gray-500 active:text-blue-600">Recipes</NuxtLink></li>
         <li class="text-gray-300">
         </li>
-        <li><a class="text-sm text-gray-600 font-bold hover:text-gray-500 active:text-blue-600" href="#">Pricing</a></li>
+        <li><a class="text-sm text-gray-600 font-bold hover:text-gray-500 active:text-blue-600" href="#">Place Hold</a></li>
         <li class="text-gray-300">
         </li>
         <li><NuxtLink to="/contact" class="text-sm text-gray-600 font-bold hover:text-gray-500 active:text-blue-600">Contact Us</NuxtLink></li>
